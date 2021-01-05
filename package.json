@@ -1,0 +1,43 @@
+{
+  "name": "spectrum-ui",
+  "description": "another spectrum implementation unofficial inspired by adobe spectrum",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "components/*",
+    "templates/*",
+    "docs"
+  ],
+  "scripts": {
+    "build": "lerna run build --stream",
+    "clean": "lerna run clean --parallel",
+    "test:type": "lerna run test:type --stream",
+    "test": "lerna run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeliex/spectrum-ui.git"
+  },
+  "keywords": [
+    "spectrum",
+    "react",
+    "react-ui-components"
+  ],
+  "author": "yeliex <yeliex@yeliex.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/yeliex/spectrum-ui/issues"
+  },
+  "homepage": "https://github.com/yeliex/spectrum-ui#readme",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test"
+    }
+  }
+}
