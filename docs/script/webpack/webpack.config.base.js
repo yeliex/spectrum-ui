@@ -42,7 +42,7 @@ module.exports = (config = {}) => {
     }, {});
 
     config.output = {
-        path: resolve(CWD, 'dist'),
+        path: resolve(__dirname,'../../../', 'dist'),
         filename: '[name].js',
         chunkFilename: 'chunk/[id]-[name].js',
         publicPath: '/',

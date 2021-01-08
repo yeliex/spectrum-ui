@@ -10,7 +10,7 @@ const args = Object.assign({}, minimist(process.argv), minimist(JSON.parse(proce
 
 let env = process.env.NODE_ENV || 'development';
 
-if (args.prod || args.production) {
+if (args.prod || args.production || args.env === 'production') {
     env = 'production';
 }
 

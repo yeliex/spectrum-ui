@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    // sourceType: 'unambiguous',
+    sourceType: 'unambiguous',
     cacheDirectory: require('path').resolve(require('os').tmpdir(), 'webpack/babel'),
     presets: [
         require.resolve('@babel/preset-react'),
