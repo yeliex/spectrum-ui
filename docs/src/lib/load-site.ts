@@ -1,5 +1,5 @@
 import Component, { IComponentModule } from './load-component';
-import site from '../site.yaml';
+import site from '../site.yml';
 import { parse } from 'yaml';
 import { kebabCase } from 'lodash';
 

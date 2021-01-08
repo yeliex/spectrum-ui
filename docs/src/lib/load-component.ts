@@ -6,7 +6,7 @@ import parseMeta, { IComponentMeta } from './parse-meta';
 
 const debug = Debug('app:load-component');
 
-const modules = require.context(process.env.COMPONENT_ROOT!, true, /((index\.tsx?)|(\.(yml|md))$)|example/);
+const modules = require.context(process.env.COMPONENT_ROOT!, true, /((index\.tsx?)|(\.(ya?ml|md))$)|example/);
 
 const COMPONENT_NAME_REGEX = /^\.\/([a-z-_]+)/i;
 
