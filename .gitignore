@@ -12,11 +12,3 @@ npm-debug.log*
 yarn-error.log
 *~
 ~*
-
-*.js
-*.js.map
-*.d.ts
-!script/**/*.js
-!**/script/**/*.js
-!types/**/*.d.ts
-**/dist
