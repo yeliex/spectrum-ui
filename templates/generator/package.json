@@ -2,10 +2,11 @@
   "name": "generator-spectrum-ui",
   "version": "0.0.0",
   "description": "generate an spectrum-ui package with yeoman",
-  "files": [
-
-  ],
+  "files": [],
   "keywords": [
     "yeoman-generator"
-  ]
+  ],
+  "dependencies": {
+    "spectrum-ui": "^0.0.0"
+  }
 }

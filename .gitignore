@@ -16,3 +16,11 @@ yarn-error.log
 *.js
 *.js.map
 *.d.ts
+!script/**/*.js
+!**/script/**/*.js
+!types/**/*.d.ts
+**/dist
+
+.next
+!next.config.js
+!next-env.d.ts

@@ -1,5 +1,5 @@
 {
-  "name": "react-spectrum-ui",
+  "name": "spectrum-design",
   "version": "0.0.0",
   "description": "another spectrum implementation unofficial inspired by adobe spectrum",
   "keywords": [
@@ -17,5 +17,8 @@
   },
   "bugs": {
     "url": "https://github.com/yeliex/spectrum-ui/issues"
+  },
+  "dependencies": {
+    "spectrum-ui": "^0.0.0"
   }
 }
