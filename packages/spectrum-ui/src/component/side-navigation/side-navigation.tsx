@@ -1,5 +1,5 @@
 import React from 'react';
-import Style from '@spectrum-css/sidenav/dist/index-vars.css';
+import Style from './style';
 import { BaseProps, decorator } from '../../common/base-component';
 import classNames from 'classnames';
 import SideNavigationHeading from './side-navigation-heading';

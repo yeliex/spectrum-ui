@@ -1,7 +1,6 @@
 import React, { AnchorHTMLAttributes } from 'react';
 import ButtonGroup from '../button-group';
-import Style from '@spectrum-css/button/dist/index-vars.css';
-import './index.less';
+import Style from './style';
 import { BaseProps } from '../../common/base-component';
 import classNames from 'classnames';
 

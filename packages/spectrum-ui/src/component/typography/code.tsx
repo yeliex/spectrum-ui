@@ -1,7 +1,6 @@
 import React, { createElement, PropsWithChildren } from 'react';
 import { TypographyTextBaseProps } from './typography';
-import Style from '@spectrum-css/typography/dist/index-vars.css';
-import InnerStyle from './index.less';
+import Style from './style';
 import classNames from 'classnames';
 
 export interface TypographyCodeProps extends TypographyTextBaseProps {
@@ -31,7 +30,7 @@ const TypographyCode = (props: PropsWithChildren<TypographyCodeProps>) => {
                 [Style.spectrumCodeSerif]: serif,
                 [Style.spectrumCodeEmphasis]: emphasis,
                 [Style.spectrumCodeStrong]: strong,
-                [InnerStyle.spectrumTypographyCenter]: centered,
+                [Style.spectrumTypographyCenter]: centered,
             },
             inputClassName,
         );

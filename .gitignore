@@ -18,4 +18,4 @@ yarn-error.log
 *.d.ts
 !script/**/*.js
 !**/script/**/*.js
-!types/*.d.ts
+!types/**/*.d.ts

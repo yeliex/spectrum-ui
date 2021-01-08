@@ -110,9 +110,46 @@ module.exports = (config = {}) => {
             },
             {
                 test: /\.less$/,
-                include: [/node_modules/, /packages\/spectrum-ui/],
+                include: [/node_modules/],
                 use: [
                     MiniCssExtractPlugin.loader,
+                    {
+                        loader: require.resolve('css-loader'),
+                        options: {
+                            sourceMap: true,
+                            modules: {
+                                localIdentName: '[local]',
+                                exportLocalsConvention: 'camelCaseOnly',
+                            },
+                        },
+                    },
+                    {
+                        loader: require.resolve('postcss-loader'),
+                        options: { postcssOptions },
+                    },
+                    {
+                        loader: require.resolve('less-loader'),
+                        options: {
+                            sourceMap: true,
+                            lessOptions: {
+                                javascriptEnabled: true,
+                            },
+                        },
+                    },
+                ],
+            },
+            {
+                test: /\.less$/,
+                include: [/packages\/spectrum-ui/],
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: require.resolve('dts-css-modules-loader'),
+                        options: {
+                            namedExport: true,
+                            banner: "// This file is generated automatically"
+                        }
+                    },
                     {
                         loader: require.resolve('css-loader'),
                         options: {

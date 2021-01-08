@@ -1,6 +1,5 @@
 import React, { PropsWithChildren } from 'react';
-import Style from '@spectrum-css/buttongroup/dist/index-vars.css';
-import './index.less';
+import Style from './style';
 
 export interface ButtonGroupProps {
 

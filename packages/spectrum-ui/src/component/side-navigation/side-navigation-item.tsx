@@ -1,5 +1,5 @@
 import React, { AnchorHTMLAttributes, createElement } from 'react';
-import Style from '@spectrum-css/sidenav/dist/index-vars.css';
+import Style from './style';
 import { BaseProps } from '../../common/base-component';
 import classNames from 'classnames';
 
