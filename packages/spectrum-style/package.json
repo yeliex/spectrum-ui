@@ -1,0 +1,24 @@
+{
+  "name": "spectrum-style",
+  "version": "0.0.0",
+  "description": "style implementation of adobe spectrum",
+  "keywords": [
+    "spectrum",
+    "less",
+    "ui-components"
+  ],
+  "author": "yeliex <yeliex@yeliex.com>",
+  "homepage": "https://github.com/yeliex/spectrum-ui/tree/master/packages/spectrum-ui#readme",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeliex/spectrum-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yeliex/spectrum-ui/issues"
+  },
+  "dependencies": {
+    "spectrum-ui": "^0.0.0"
+  }
+}

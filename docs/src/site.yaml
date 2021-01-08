@@ -1,0 +1,32 @@
+name: Spectrum-UI
+menu:
+    INTRODUCTION:
+        Getting Started:
+            path: /introduction/getting-started
+        Versioning:
+            path: /introduction/versioning
+        GitHub:
+            path: https://github.com/yeliex/spectrum-ui
+        Spec(by adobe):
+            path: https://opensource.adobe.com/spectrum-css
+    CONCEPT:
+        Layout:
+            path: /concept/layout
+        Styling:
+            path: /concept/styling
+        Testing:
+            path: /concept/testing
+        Theming:
+            path: /concept/Theming
+        Server Side Rendering:
+            path: /concept/ssr
+    COMPONENT:
+        - Application
+        - Layout
+        - Basic
+        - Navigation
+        - Status
+        - Content
+        - Input
+        - Other
+
