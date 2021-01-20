@@ -1,16 +1,14 @@
 import React from 'react';
 import { BaseProps } from '../../common/base-component';
-import { Scale, Theme, ThemeConfig } from '../../hook/config-context';
+import { ComponentStatusProps, ThemeConfig } from '../../hook/config-context';
 import classNames from 'classnames';
 import { uniq, defaults, defaultsDeep } from 'lodash';
 import useConfig from '../../hook/use-config';
 import { DEFAULT_THEME } from '../config-provider';
 import TypographyStyle from '@spectrum-css/typography/dist/index-vars.css';
 
-export interface ViewProps extends BaseProps {
-    theme?: Theme;
+export interface ViewProps extends BaseProps, Partial<Pick<ComponentStatusProps, 'scale' | 'theme'>> {
     themeConfig?: ThemeConfig;
-    scale?: Scale;
     node?: keyof HTMLElementTagNameMap | React.ComponentType;
 }
 
@@ -27,7 +25,6 @@ const View = (props: React.PropsWithChildren<ViewProps>) => {
 
     const outerConfig = useConfig();
 
-    // todo: 使用统一的方法合并主题配置
     const [className, style] = React.useMemo(() => {
         const config = defaults({
             themeConfig: inputThemeConfig,

@@ -6,3 +6,5 @@ description: >
     and are ideal for calling attention to where a user needs to do something in order to move forward in a flow.
 example:
     base: Basic
+    type: Button Type
+    size: Different Size

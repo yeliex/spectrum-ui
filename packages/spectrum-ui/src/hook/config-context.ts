@@ -12,16 +12,22 @@ export type Theme = 'light' | 'dark' | 'darkest' | 'lightest';
 
 export type Scale = 'medium' | 'large';
 
-export interface ConfigContextProps {
-    theme: Theme;
-    themeConfig: ThemeConfig;
-    scale: Scale;
-    locale: string;
+export interface ComponentStatusProps {
     quiet: boolean;
-    emphasized: boolean;
     disabled: boolean;
+    scale: Scale;
+    theme: Theme;
+    emphasized: boolean;
+}
+
+export interface InputComponentStatusProps {
     required: boolean;
     readOnly: boolean;
+}
+
+export interface ConfigContextProps extends ComponentStatusProps, InputComponentStatusProps {
+    themeConfig: ThemeConfig;
+    locale: string;
 }
 
 const ConfigContext = React.createContext<ConfigContextProps>(null as any);

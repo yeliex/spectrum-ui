@@ -8,6 +8,7 @@
   "sideEffects": false,
   "files": [
     "dist",
+    "src",
     "package.json",
     "readme.md"
   ],

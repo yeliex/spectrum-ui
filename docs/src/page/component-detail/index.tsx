@@ -18,8 +18,8 @@ const ComponentDetail = () => {
 
     return (
         <div>
-            <Typography.Heading level={1}>{component.meta.name}</Typography.Heading>
-            <Typography.Detail>{component.meta.description}</Typography.Detail>
+            <Typography.Heading serif level={1}>{component.meta.name}</Typography.Heading>
+            <Typography.Body>{component.meta.description}</Typography.Body>
             {
                 Object.keys(component.example || {}).map((name) => {
                     const example = (component.meta.example || {})[name] || {};
