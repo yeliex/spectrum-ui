@@ -21,22 +21,23 @@ export interface TypographyTextBaseProps extends BaseProps {
     centered?: boolean;
 }
 
-export interface TypographyProps extends BaseProps {
-    node?: keyof HTMLElementTagNameMap | React.ComponentType | string;
+export interface TypographyProps<T = keyof React.ReactHTML | React.ComponentType | string> extends BaseProps, React.HTMLAttributes<T> {
+    node?: T;
 }
 
-const Typography = (props: PropsWithChildren<TypographyProps>) => {
-    const { children, className, style, node = 'div' } = props;
+function Typography(props: PropsWithChildren<TypographyProps<keyof HTMLElementTagNameMap | React.ComponentType | string>>) {
+    const { children, className, style, node = 'div', ...extra } = props;
 
-    const mergedClassName = React.useMemo(()=>{
-        return classNames(Style.spectrumTypography)
-    }, [className])
+    const mergedClassName = React.useMemo(() => {
+        return classNames(Style.spectrumTypography);
+    }, [className]);
 
     return createElement(node as string, {
         className: mergedClassName,
         style,
+        ...extra,
     }, children);
-};
+}
 
 Typography.Heading = TypographyHeading;
 Typography.Code = TypographyCode;

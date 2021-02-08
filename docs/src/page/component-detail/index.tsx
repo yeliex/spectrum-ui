@@ -25,7 +25,7 @@ const ComponentDetail = () => {
                     const example = (component.meta.example || {})[name] || {};
 
                     return (
-                        <Typography className={Style.example} key={name}>
+                        <Typography id={`component-${componentName}-demo-${name}`} className={Style.example} key={name}>
                             <Typography.Heading level={2}>{example.name || name}</Typography.Heading>
                             <p>{example.description}</p>
                             <div className={Style.exampleContent}>
